@@ -9,7 +9,7 @@ const FAQs = () => {
 
     return(
         <div className="column container">
-            <div className="b2b-body mt-28 pb-16 mx-4">
+            <div id="faq" className="b2b-body mt-28 pb-16 mx-4">
                 <h1 className="text-3xl font-bold pb-8 max-w-4xl text-mtext">FAQs</h1>
                 <div className="all w-full flex flex-row gap-x-4 items-center">
                     <div className="all-faqs w-full">

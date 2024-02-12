@@ -1,6 +1,12 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
 body{
   background: #131212;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 

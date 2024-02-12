@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function Hero(){
     return(
@@ -15,7 +15,7 @@ export default function Hero(){
                             <p className="text-lg md:text-xl lg:text-2xl">We liberates Filmmakers and fans through decentralized funding.</p>
                             
                             <div className="nav-right mt-4 md:mt-8 w-fit flex flex-row min-[280px]:flex-col min-[400px]:flex-row md:flex-row gap-y-3 gap-x-4 md:gap-x-4 mb-3 md:mb-0 items-center">
-                                <button  className="h-14 md:h-16 w-[170px] md:text-lg md:w-[250px] bg-m-Primary rounded-2xl text-black font-bold px-5 md:px-8 flex  flex-row gap-x-2 items-center justify-center"> Explore Projects</button>
+                                <Link to={'/marketpalce'}><button  className="h-14 md:h-16 w-[170px] md:text-lg md:w-[250px] bg-m-Primary rounded-2xl text-black font-bold px-5 md:px-8 flex  flex-row gap-x-2 items-center justify-center"> Explore Projects</button></Link>
                                 <button  className="h-14 md:h-16 w-[170px] md:text-lg md:w-[250px] bg-mgray font-bold rounded-2xl md:px-5">Become a Partner</button>
                             </div>
                         </div>

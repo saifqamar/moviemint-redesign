@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer(){
     return(
-        <div className="px-6 lg:px-20 text-mtext">
+        <div className="px-6 pt-12  text-mtext bg-neutral-900">
             <div className="whole-footer mt-0 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                 <div className="mb-6 lg:mb-6">
                     {/* <p className="font-bold text-lg pb-7">W.</p> */}
@@ -12,7 +12,7 @@ export default function Footer(){
                         <div className="footer-grid flex flex-row justify-between ">
                             <ul className="foot-menu text-base font-semibold w-5/12">
                                 {/* <li className="mb-2.5 w-24 h-24"><a href=""><img src="https://moviemint.net/static/media/logo.c8743748796ba7fefd35.png" alt="logo" /></a></li> */}
-                                <li><a href="" className="font-normal">MovieMint liberates Filmmakers and fans through decentralized funding. Our Blockchain platform seamlessly connects Independent Creators and Passionate Supporters.</a></li>
+                                <li><a href="" className="font-normal text-grayText">MovieMint liberates Filmmakers and fans through decentralized funding. Our Blockchain platform seamlessly connects Independent Creators and Passionate Supporters.</a></li>
                             </ul>
 
                             <ul className="foot-menu py-0 text-base font-semibold">
@@ -37,7 +37,7 @@ export default function Footer(){
                     </div>
                 </div>
 
-                <div className="foot-bottom border-1 boder-dotted pt-6 mb-10 flex flex-col lg:flex-row lg:justify-between">
+                <div className="foot-bottom border-1 boder-dotted pt-6 pb-3 flex flex-col lg:flex-row lg:justify-between">
                     <div className="flex text-sm py-1 font- gap-x-6">
                         <p>All Rights reserved for moviemint.net - 2024</p>
                         

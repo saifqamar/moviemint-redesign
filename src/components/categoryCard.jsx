@@ -9,8 +9,7 @@ export default function CategoryCard(){
             </div>
             <div className="fcrd-details text-white px-4 py-4">
                 <p className="title text-mtext font-semibold text-xl flex justify-between">Seventh Prophecy  <p className="author text-grayText font-medium text-sm mb-1">200 <span>Movies</span></p></p>
-                
-                
+
             </div>
         </div>
     )
