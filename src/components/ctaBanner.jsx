@@ -1,6 +1,6 @@
 export default function CTABannner(){
     return(
-        <div className="cta-banner px-6">
+        <div className="cta-banner px-6 lg:px-20">
             <div className="whole bg-crdGray w-full rounded-xl overflow-hidden  relative items-center flex flex-col md:flex-row-reverse">
                 <div className="ban-img md:w-8/12 h-full ">
                     <img className="w-full h-full object-cover" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/221219166/original/cee678002ec36e26cf0bde47806fe35da6b35fee/make-professional-creative-movie-poster-design-for-your-film.jpg" alt="banner img" />

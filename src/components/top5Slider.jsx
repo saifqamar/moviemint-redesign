@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
+import productData from '../data/movieData.js'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -15,6 +14,7 @@ import { Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import FCard from './FCard';
 
 export default function Top5Slider() {
+  console.log('no of movies >>>', productData.length)
   return (
     <>
       <Swiper
@@ -48,8 +48,14 @@ export default function Top5Slider() {
         
         className="mySwiper"
       > 
-        <SwiperSlide>
-            <FCard />
+
+        {productData.map((movie, index) => (
+          <SwiperSlide>
+            <FCard user={movie.uploader} title={movie.title} price={movie.price} shares={movie.shares} image={movie.imageUrl} url={movie.url} />
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>
+            <FCard  />
         </SwiperSlide>
 
         <SwiperSlide>
@@ -66,7 +72,7 @@ export default function Top5Slider() {
 
         <SwiperSlide>
             <FCard />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

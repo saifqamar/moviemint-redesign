@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer(){
     return(
-        <div className="px-6 pt-12  text-mtext bg-neutral-900">
+        <div className="px-6 lg:px-20  pt-12  text-mtext bg-neutral-900">
             <div className="whole-footer mt-0 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                 <div className="mb-6 lg:mb-6">
                     {/* <p className="font-bold text-lg pb-7">W.</p> */}

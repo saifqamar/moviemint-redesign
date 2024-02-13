@@ -4,11 +4,11 @@ import React from "react";
 export default function RankingTable(){
     return(
         <div className="whole mt-8 md:mt-20">
-            <div className="head-sec px-4 w-full flex flex-row justify-between mb-5">
+            <div className="head-sec px-4 lg:px-20 w-full flex flex-row justify-between mb-5">
                 <h1 className="text-mtext text-3xl font-bold ">Projects</h1>
                 <a href="" className="py-2 text-mtext bg-mgray rounded-xl md:px-5">see all</a>
             </div>
-            <div className=" px-4 w-full text-mtext">
+            <div className=" px-4 lg:px-20 w-full text-mtext">
                 <table className="w-full table-auto sm:table-fixed">
                     <tr className="text-left text-sm text-aw-color border-b border-none border-aw-color ">
                         <th className="p-4 text-grayText">Name</th>

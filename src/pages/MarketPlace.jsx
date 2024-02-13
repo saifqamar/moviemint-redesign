@@ -6,10 +6,16 @@ import MarketHero from "../components/marketHero";
 import AboutCard from "../components/aboutCard";
 import MarketCard from "../components/marketCard";
 import Footer from "../components/footer";
+import { useParams } from "react-router-dom";
+import productData from "../data/movieData";
+
+
+
 
 export default function Marketplace(){
     const [isCatOpen, setIsCatOpen] = useState(false);
     const [isGenOpen, setIsGenOpen] = useState(false);
+    const movieUrl = useParams();
 
     const CatOpen = () =>{
         setIsCatOpen(!isCatOpen)
@@ -58,7 +64,7 @@ export default function Marketplace(){
                                 {/* Filter button */}
                                 <button id="dropdownDefault" data-dropdown-toggle="dropdown"
                                     onClick={CatOpen}
-                                    className={isCatOpen ? "text-white flex justify-between w-full lg:text-xl bg-black hover:bg-black focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center" : "text-white flex justify-between w-full lg:text-xl bg-primary-700 hover:bg-black focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center"}
+                                    className={isCatOpen ? "text-white flex justify-between w-full lg:text-xl bg-black hover:bg-black  font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center" : "text-white flex justify-between w-full lg:text-xl bg-primary-700 hover:bg-black  font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center"}
                                     type="button">
                                     Category
                                     <svg className={isCatOpen ? "w-4 h-4 ml-2 rotate-180" : "w-4 h-4 ml-2"} aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -189,7 +195,7 @@ export default function Marketplace(){
                                 {/* Filter button */}
                                 <button id="dropdownDefault" data-dropdown-toggle="dropdown"
                                     onClick={GenOpen}
-                                    className={isGenOpen ? "text-white flex justify-between w-full lg:text-xl bg-black hover:bg-black focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center" : "text-white flex justify-between w-full lg:text-xl bg-primary-700 hover:bg-black focus:ring-1 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center"}
+                                    className={isGenOpen ? "text-white flex justify-between w-full lg:text-xl bg-black hover:bg-black font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center" : "text-white flex justify-between w-full lg:text-xl bg-primary-700 hover:bg-black font-medium rounded-lg text-sm px-4 py-2.5 text-center items-center"}
                                     type="button">
                                     Genre
                                     <svg className={isGenOpen ? "w-4 h-4 ml-2 rotate-180" : "w-4 h-4 ml-2"} aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -317,7 +323,9 @@ export default function Marketplace(){
                         </div>
                     </div>
                     <main className=" mt-6 lg:w-5/6 lg:mt-0 lg:pl-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-6">
-                        <MarketCard />
+                        {productData.map(movie => (
+                            <MarketCard user={movie.uploader} title={movie.title} price={movie.price} shares={movie.shares} image={movie.imageUrl} url={movie.url} />
+                        ))}
                         <MarketCard />
                         <MarketCard />
                         <MarketCard />
