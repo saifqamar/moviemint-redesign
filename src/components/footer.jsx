@@ -1,4 +1,6 @@
 import React from "react";
+import logo from '../images/logo.webp'
+
 
 
 export default function Footer(){
@@ -7,7 +9,7 @@ export default function Footer(){
             <div className="whole-footer mt-0 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
                 <div className="mb-6 lg:mb-6">
                     {/* <p className="font-bold text-lg pb-7">W.</p> */}
-                    <a href="" className=""><img className="w-24 h-24 mb-6" src="https://moviemint.net/static/media/logo.c8743748796ba7fefd35.png" alt="logo" /></a>
+                    <a href="" className=""><img className="w-24 h-auto mb-6" src={logo} alt="logo" /></a>
                     <div className="foot-wrap w-full flex flex-col gap-y-6 lg:flex-row ">
                         <div className="footer-grid flex flex-row justify-between ">
                             <ul className="foot-menu text-base font-semibold w-5/12">

@@ -1,4 +1,4 @@
-
+import aboutVideo from '../assets/videos/aboutus.mp4'
 
 export default function AboutHero(props){
     return(
@@ -6,7 +6,7 @@ export default function AboutHero(props){
             <div className="main-element">
                 <div className="rounded-b-[16px] h-[500px] md:h-[50vh] w-full relative overflow-hidden">
                     <video className="rounded-b-[16px] w-full h-full object-cover md:object-cover"  type="video/mp4"  muted paly loop autoPlay>
-                        <source src="https://staging.moviemint.net/uploads/video/admin/video1.mp4" type="video/mp4" />
+                        <source src={aboutVideo} type="video/mp4" />
                     </video>
                     <div className="extras absolute px-4 md:px-20 pb-2 w-full h-full top-0 flex items-center bg-gradient-to-r from-neutral-900 to-mtext/0 text-mtext">
                         <div className="">

@@ -1,4 +1,5 @@
 import ReactPlayer from 'react-player'
+import shortsVid from '../assets/videos/shorts.mp4'
 
 export default function ShortsHero(){
     return(
@@ -6,7 +7,7 @@ export default function ShortsHero(){
             <div className="main-element">
                 <div className="rounded-[16px] h-[300px] md:h-[20vh] w-full border border-crdGray relative overflow-hidden">
                     <video className="rounded-b-[16px] w-full h-full object-cover md:object-cover"  type="video/mp4" muted autoPlay play loop  >
-                        <source src="https://staging.moviemint.net/uploads/video/admin/video1.mp4" type="video/mp4" />
+                        <source src={shortsVid} type="video/mp4" />
                     </video>
                     {/* <ReactPlayer width={'100%'} style={{'objectFit': 'cover', width:'100%'}} url='https://staging.moviemint.net/uploads/video/admin/video1.mp4' /> */}
 

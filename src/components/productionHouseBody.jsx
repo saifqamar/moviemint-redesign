@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import MarketCard from "./marketCard";
 import { useState } from "react";
 import StoryCards from "./storyCards";
+import prodLogo from "../images/prodHouseLogo.jpeg"
 
 export default function ProductionHouseBody(props){
     const [isCatOpen, setIsCatOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function ProductionHouseBody(props){
     return(
         <div className="whole-body relative mx-6 lg:mx-20">
             <div className="profile-pic absolute -top-12 w-20 lg:w-28 h-20 lg:h-28 rounded-full overflow-hidden border border-m-Primary">
-                <img className="w-full h-full" src="https://staging.moviemint.net/uploads/creator/0x5f4b470ae07e7780c03cb73256c5aebd69fa7e77/0x5f4b470ae07e7780c03cb73256c5aebd69fa7e771705572405679.jpg" alt="production house image" />
+                <img className="w-full h-full" src={prodLogo} alt="production house image" />
             </div>
             <div className="pt-12 lg:pt-28">
                 <div className="uppersec">

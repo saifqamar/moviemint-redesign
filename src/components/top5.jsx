@@ -10,7 +10,7 @@ export default function Top5(){
                         <h1 className="text-mtext text-3xl font-bold ">Top Projects</h1>
                         <a href="" className="py-2 text-mtext bg-mgray rounded-xl md:px-5">see all</a>
                     </div>
-                    <div className="top5-cards mx-16">
+                    <div className="top5-cards mx-4 md:mx-16">
                         <Top5Slider />
                     </div>
                 </div>

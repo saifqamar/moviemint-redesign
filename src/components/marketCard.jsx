@@ -12,7 +12,7 @@ export default function MarketCard(props){
                 <img className="w-full h-full object-cover" src={props.image} alt="" />
             </div>
             <div className="fcrd-details text-white px-4 py-4">
-                <p className="author text-grayText font-medium text-sm mb-1">by <Link to={`/productionhouse/${props.user}`}><span className="hover:text-m-Primary">{props.user}</span> </Link></p>
+                <p className="author text-grayText font-medium text-sm mb-1">by <Link to={`/productionhouse/${props.id}`}><span className="hover:text-m-Primary">{props.user}</span> </Link></p>
                 <p className="title text-mtext font-semibold text-base mb-2">{props.title}</p>
                 <div className="etc flex flex-row justify-between">
                     <div className="price w-1/2 ">

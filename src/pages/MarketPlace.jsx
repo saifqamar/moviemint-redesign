@@ -324,13 +324,9 @@ export default function Marketplace(){
                     </div>
                     <main className=" mt-6 lg:w-5/6 lg:mt-0 lg:pl-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-6">
                         {productData.map(movie => (
-                            <MarketCard user={movie.uploader} title={movie.title} price={movie.price} shares={movie.shares} image={movie.imageUrl} url={movie.url} />
+                            <MarketCard id={movie.id} user={movie.uploader} title={movie.title} price={movie.price} shares={movie.shares} image={movie.imageUrl} url={movie.url} />
                         ))}
-                        <MarketCard />
-                        <MarketCard />
-                        <MarketCard />
-                        <MarketCard />
-                        <MarketCard />
+                        
                     </main>
                 </div>
             </div>

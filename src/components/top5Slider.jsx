@@ -54,25 +54,7 @@ export default function Top5Slider() {
             <FCard user={movie.uploader} title={movie.title} price={movie.price} shares={movie.shares} image={movie.imageUrl} url={movie.url} />
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-            <FCard  />
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <FCard />
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <FCard />
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <FCard />
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <FCard />
-        </SwiperSlide> */}
+        
       </Swiper>
     </>
   );
